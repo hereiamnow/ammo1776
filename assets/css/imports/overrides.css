@@ -1,0 +1,12 @@
+.display-1, .display-2, .display-3, .display-4 {
+	font-family : 'IM Fell English SC', serif;
+}
+
+.navbar-brand{
+	font-family : 'IM Fell English SC', serif;
+	font-size: 1.3em;
+}
+.nav-item{
+	text-transform : capitalize;
+	font-family: 'Lato', sans-serif;
+}
