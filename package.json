@@ -1,0 +1,20 @@
+{
+    "title": "AMMO1776",
+    "name": "american-minutemen-organization",
+    "version": "1.0.0-alpha",
+    "description": "",
+    "homepage": "http://www.ammo1776.com/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ammo/american-minutemen-organization.git"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "jquery": "^3.2.1",
+        "popper.js": "^1.11.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.18.13",
+        "gulp": "^3.9.1"
+    }
+}
