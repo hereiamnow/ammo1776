@@ -26,7 +26,7 @@
 <!--##########################################-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 	<div class="container">
-		<a class="navbar-brand" href="index.html">AMMO Registration</a>
+		<a class="navbar-brand" href="index.html">American Minutemen Organization</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -51,149 +51,337 @@
 
 			<div class="col-md-12">
 				<div class="p-5">
+
 					<h2 class="display-4">Registration</h2>
+
 					<form action="#" class="">
-
-						<div class="form-group">
-							<label for="txtFullName">Full Name</label> <input id="txtFullName" type="text" class="form-control" placeholder="Full Name">
-							<small id="gpfullname" class="form-text text-muted">Full Name is Required....</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtPhone">Phone Number</label> <input id="txtPhone" type="text" class="form-control" placeholder="">
-							<small id="gpPhoneNumber" class="form-text text-muted">Phone Number...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtEmail">Email</label> <input id="txtEmail" type="text" class="form-control" placeholder="">
-							<small id="gpEmail" class="form-text text-muted">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtAddress">Address</label> <input id="txtAddress" type="text" class="form-control" placeholder="">
-							<small id="gpaddy1" class="form-text text-muted">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtAddress2">Address 2</label> <input id="txtAddress2" type="text" class="form-control" placeholder="">
-							<small id="gpaddy2" class="form-text text-muted">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtAddyCity">City</label> <input id="txtAddyCity" type="text" class="form-control" placeholder="">
-							<small id="gpaddycity class=" form-text text-muted
-							">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtAddyState">State</label> <input id="txtAddyState" type="text" class="form-control" placeholder="">
-							<small id="gpaddystate" class="form-text text-muted">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtDLNumber">Drivers License Number</label> <input id="txtDLNumber" type="text" class="form-control" placeholder="">
-							<small id="gpDLNumber" class="form-text text-muted">Some text...</small>
-						</div>
-
-						<div class="form-group">
-							<label for="txtDLState">Drivers License State</label> <input id="txtDLState" type="text" class="form-control" placeholder="">
-							<small id="gpDLState" class="form-text text-muted">Some text...</small>
-						</div>
-
+						<!--###########################-->
+						<!--# First Fieldset          #-->
+						<!--###########################-->
 						<fieldset>
+							<!--###########################-->
+							<!--# First Name              #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtFirstName">First Name</label>
+								<input id="txtFirstName" type="text" class="form-control" placeholder="First Name"/>
+								<small id="msgFirstName" class="form-text text-muted">First Name Required</small>
+							</div>
+							<!--###########################-->
+							<!--# Middle Name             #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtMiddleName">Middle Name</label>
+								<input id="txtMiddleName" type="text" class="form-control" placeholder="Middle Name"/>
+								<small id="msgMiddleName" class="form-text text-muted">If no middle name use NMN in text field above</small>
+							</div>
+							<!--###########################-->
+							<!--# Last Name               #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtLastName">Last Name</label>
+								<input id="txtLastName" type="text" class="form-control" placeholder="Last Name"/>
+								<small id="msgLastName" class="form-text text-muted">Last Name Required</small>
+							</div>
+							<!--###########################-->
+							<!--# Phone Number            #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtPhone">Phone Number</label>
+								<input id="txtPhone" type="text" class="form-control" placeholder="Phone Number with Area Code">
+								<small id="gpPhoneNumber" class="form-text text-muted">Phone Number Required</small>
+							</div>
+							<!--###########################-->
+							<!--# Valid Email Addy        #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtEmail">Email</label>
+								<input id="txtEmail" type="text" class="form-control" placeholder="Email Address">
+								<small id="gpEmail" class="form-text text-muted">Email Address Required</small>
+							</div>
+
+							<!--###########################-->
+							<!--# Address Line 1          #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label for="txtAddress">Address</label>
+								<input id="txtAddress" type="text" class="form-control" placeholder="Address Line 1">
+								<small id="gpaddy1" class="form-text text-muted">Address Line 1 Required</small>
+							</div>
+							<!--###########################-->
+							<!--# Address Line 2          #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label class="sr-only" for="txtAddress2">Address 2</label>
+								<input id="txtAddress2" type="text" class="form-control" placeholder="Address Line 2">
+								<small id="gpaddy2" class="form-text text-muted">Apt/House Number</small>
+							</div>
+
+							<!--###########################-->
+							<!--# City, State, Zip        #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label>City, State, & Zip Code</label>
+								<div class="form-inline">
+
+									<!--###########################-->
+									<!--# City                    #-->
+									<!--###########################-->
+									<label class="sr-only" for="txtAddyCity">City</label>
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="txtAddyCity" placeholder="City">
+									<!--###########################-->
+									<!--# State                   #-->
+									<!--###########################-->
+									<label class="sr-only" for="txtAddyState2">State</label>
+									<select id="txtAddyState2"class="form-control custom-select mb-2 mr-sm-2 mb-sm-0">
+										<option value="AL">Alabama (AL)</option>
+										<option value="AK">Alaska (AK)</option>
+										<option value="AZ">Arizona (AZ)</option>
+										<option value="AR">Arkansas (AR)</option>
+										<option value="CA">California (CA)</option>
+										<option value="CO">Colorado (CO)</option>
+										<option value="CT">Connecticut (CT)</option>
+										<option value="DE">Delaware (DE)</option>
+										<option value="DC">District Of Columbia (DC)</option>
+										<option value="FL">Florida (FL)</option>
+										<option value="GA">Georgia (GA)</option>
+										<option value="HI">Hawaii (HI)</option>
+										<option value="ID">Idaho (ID)</option>
+										<option value="IL">Illinois (IL)</option>
+										<option value="IN">Indiana (IN)</option>
+										<option value="IA">Iowa (IA)</option>
+										<option value="KS">Kansas (KS)</option>
+										<option value="KY">Kentucky (KY)</option>
+										<option value="LA">Louisiana (LA)</option>
+										<option value="ME">Maine (ME)</option>
+										<option value="MD">Maryland (MD)</option>
+										<option value="MA">Massachusetts (MA)</option>
+										<option value="MI">Michigan (MI)</option>
+										<option value="MN">Minnesota (MN)</option>
+										<option value="MS">Mississippi (MS)</option>
+										<option value="MO">Missouri (MO)</option>
+										<option value="MT">Montana (MT)</option>
+										<option value="NE">Nebraska (NE)</option>
+										<option value="NV">Nevada (NV)</option>
+										<option value="NH">New Hampshire (NH)</option>
+										<option value="NJ">New Jersey (NJ)</option>
+										<option value="NM">New Mexico (NM)</option>
+										<option value="NY">New York (NY)</option>
+										<option value="NC">North Carolina (NC)</option>
+										<option value="ND">North Dakota (ND)</option>
+										<option value="OH">Ohio (OH)</option>
+										<option value="OK">Oklahoma (OK)</option>
+										<option value="OR">Oregon (OR)</option>
+										<option value="PA">Pennsylvania (PA)</option>
+										<option value="RI">Rhode Island (RI)</option>
+										<option value="SC">South Carolina (SC)</option>
+										<option value="SD">South Dakota (SD)</option>
+										<option value="TN">Tennessee (TN)</option>
+										<option value="TX">Texas (TX)</option>
+										<option value="UT">Utah (UT)</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+									<!--###########################-->
+									<!--# Postal Code             #-->
+									<!--###########################-->
+									<label class="sr-only" for="txtAddyZip2">Zip</label>
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="txtAddyZip2" placeholder="Zip">
+								</div>
+							</div>
+
+							<!--###########################-->
+							<!--# DL Number and State     #-->
+							<!--###########################-->
+							<div class="form-group">
+								<label>Drivers License Number & State</label>
+								<div class="form-inline">
+									<!--###########################-->
+									<!--# Postal Code             #-->
+									<!--###########################-->
+									<label class="sr-only" for="txtDLNumber">Number</label>
+									<input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="txtDLNumber" placeholder="Drivers License Number">
+									<!--###########################-->
+									<!--# State                   #-->
+									<!--###########################-->
+									<label class="sr-only" for="txtDLState">State</label>
+									<select id="txtDLState"class="form-control custom-select mb-2 mr-sm-2 mb-sm-0">
+										<option value="AL">Alabama (AL)</option>
+										<option value="AK">Alaska (AK)</option>
+										<option value="AZ">Arizona (AZ)</option>
+										<option value="AR">Arkansas (AR)</option>
+										<option value="CA">California (CA)</option>
+										<option value="CO">Colorado (CO)</option>
+										<option value="CT">Connecticut (CT)</option>
+										<option value="DE">Delaware (DE)</option>
+										<option value="DC">District Of Columbia (DC)</option>
+										<option value="FL">Florida (FL)</option>
+										<option value="GA">Georgia (GA)</option>
+										<option value="HI">Hawaii (HI)</option>
+										<option value="ID">Idaho (ID)</option>
+										<option value="IL">Illinois (IL)</option>
+										<option value="IN">Indiana (IN)</option>
+										<option value="IA">Iowa (IA)</option>
+										<option value="KS">Kansas (KS)</option>
+										<option value="KY">Kentucky (KY)</option>
+										<option value="LA">Louisiana (LA)</option>
+										<option value="ME">Maine (ME)</option>
+										<option value="MD">Maryland (MD)</option>
+										<option value="MA">Massachusetts (MA)</option>
+										<option value="MI">Michigan (MI)</option>
+										<option value="MN">Minnesota (MN)</option>
+										<option value="MS">Mississippi (MS)</option>
+										<option value="MO">Missouri (MO)</option>
+										<option value="MT">Montana (MT)</option>
+										<option value="NE">Nebraska (NE)</option>
+										<option value="NV">Nevada (NV)</option>
+										<option value="NH">New Hampshire (NH)</option>
+										<option value="NJ">New Jersey (NJ)</option>
+										<option value="NM">New Mexico (NM)</option>
+										<option value="NY">New York (NY)</option>
+										<option value="NC">North Carolina (NC)</option>
+										<option value="ND">North Dakota (ND)</option>
+										<option value="OH">Ohio (OH)</option>
+										<option value="OK">Oklahoma (OK)</option>
+										<option value="OR">Oregon (OR)</option>
+										<option value="PA">Pennsylvania (PA)</option>
+										<option value="RI">Rhode Island (RI)</option>
+										<option value="SC">South Carolina (SC)</option>
+										<option value="SD">South Dakota (SD)</option>
+										<option value="TN">Tennessee (TN)</option>
+										<option value="TX">Texas (TX)</option>
+										<option value="UT">Utah (UT)</option>
+										<option value="VT">Vermont</option>
+										<option value="VA">Virginia</option>
+										<option value="WA">Washington</option>
+										<option value="WV">West Virginia</option>
+										<option value="WI">Wisconsin</option>
+										<option value="WY">Wyoming</option>
+									</select>
+								</div>
+							</div>
+
+						</fieldset>
+
+						<!--###########################-->
+						<!--# Political Spectrum      #-->
+						<!--###########################-->
+						<fieldset class="mt-lg-5 mt-md-3 mt-sm-5">
 							<legend>Political Spectrum</legend>
 							<p>Political Spectrum Is a way of classifying different political positions.</p>
 							<div class="form-group">
-								<label for="txtPolSpec">State yours</label> <input id="txtPolSpec" type="text" class="form-control" placeholder="">
-								<small id="gpPolSpec" class="form-text text-muted">Some text...</small>
+								<label for="txtPolSpec">State yours</label>
+								<textarea id="txtPolSpec" type="text" class="form-control" placeholder="Political Spectrum"></textarea>
+								<small id="gpPolSpec" class="form-text text-muted">Political Spectrum</small>
 							</div>
-						</fieldset>
+						</fieldset><!--/Political Spectrum-->
 
-						<fieldset>
+						<!--###########################-->
+						<!--# Military Service        #-->
+						<!--###########################-->
+						<fieldset class="mt-lg-5 mt-md-3 mt-sm-5">
 							<legend>Military Service</legend>
-
 							<p>Have you served in the Military</p>
 
 							<div class="form-check form-check-inline">
-								<label for="radMilitary1"> <input id="radMilitary1" name="radMilitary" class="form-check-input" type="radio"> Yes </label>
+								<label class="form-check-label" for="radMilitary1">
+									<input id="radMilitary1" name="radMilitary" class="form-check-input" type="radio">
+									Yes
+								</label>
 							</div>
-
 							<div class="form-check form-check-inline">
-								<label for="radMilitary2"> <input id="radMilitary2" name="radMilitary" class="form-check-input" type="radio"> No </label>
+								<label class="form-check-label" for="radMilitary2">
+									<input id="radMilitary2" name="radMilitary" class="form-check-input" type="radio">
+									No
+								</label>
 							</div>
+						</fieldset><!--/Military Service-->
 
-						</fieldset>
-
-						<fieldset>
+						<!--###########################-->
+						<!--# Business Owner          #-->
+						<!--###########################-->
+						<fieldset class="mt-lg-5 mt-md-3 mt-sm-5">
 							<legend>Business Owner</legend>
-
 							<p>Are you a Business Owner?</p>
 
 							<div class="form-check form-check-inline">
-								<label for="radBusinessOwner1"> <input id="radBusinessOwner1" name="radBusinessOwner" class="form-check-input" type="radio"> Yes </label>
+								<label class="form-check-label"  for="radBusinessOwner1">
+									<input id="radBusinessOwner1" name="radBusinessOwner" class="form-check-input" type="radio">
+									Yes
+								</label>
 							</div>
-
 							<div class="form-check form-check-inline">
-								<label for="radBusinessOwner2"> <input id="radBusinessOwner2" name="radBusinessOwner" class="form-check-input" type="radio"> No </label>
+								<label class="form-check-label"  for="radBusinessOwner2">
+									<input id="radBusinessOwner2" name="radBusinessOwner" class="form-check-input" type="radio">
+									No
+								</label>
 							</div>
 
 							<div id="pnlProductServices" class="">
 								<div class="form-group">
-									<label for="txtProductServices">If yes, what services or products do you provide?</label> <input id="txtProductServices" type="text" class="form-control" placeholder="">
+									<label for="txtProductServices">If yes, what services or products do you provide?</label>
+									<input id="txtProductServices" type="text" class="form-control" placeholder="">
 									<small id="gproductservices" class="form-text text-muted">Some text...</small>
 								</div>
-
 							</div>
+						</fieldset><!--/Business Owner-->
 
-						</fieldset>
-
-						<fieldset>
+						<!--###########################-->
+						<!--# Transportation          #-->
+						<!--###########################-->
+						<fieldset class="mt-lg-5 mt-md-3 mt-sm-5">
 							<legend>Transportation</legend>
 							<p>Travel Do you have access to a vehicle?</p>
-
 							<div class="form-group">
-
 								<div class="form-check form-check-inline">
-									<label for="radVehicle1"> <input id="radVehicle1" name="radVehicle" class="form-check-input" type="radio"> Yes </label>
+									<label class="form-check-label"  for="radVehicle1">
+										<input id="radVehicle1" name="radVehicle" class="form-check-input" type="radio">
+										Yes
+									</label>
 								</div>
-
 								<div class="form-check form-check-inline">
-									<label for="radVehicle2"> <input id="radVehicle2" name="radVehicle" class="form-check-input" type="radio"> No </label>
+									<label class="form-check-label"  for="radVehicle2">
+										<input id="radVehicle2" name="radVehicle" class="form-check-input" type="radio">
+										No
+									</label>
 								</div>
-
 							</div>
 
 							<p>Are you able to travel at a moments notice?</p>
-
 							<div class="form-group">
-
 								<div class="form-check form-check-inline">
-									<label for="radTravel1"> <input id="radTravel1" name="radTravel" class="form-check-input" type="radio"> Yes </label>
+									<label class="form-check-label" for="radTravel1"> <input id="radTravel1" name="radTravel" class="form-check-input" type="radio">
+										Yes
+									</label>
 								</div>
-
 								<div class="form-check form-check-inline">
-									<label for="radTravel2"> <input id="radTravel2" name="radTravel" class="form-check-input" type="radio"> No </label>
+									<label class="form-check-label" for="radTravel2"> <input id="radTravel2" name="radTravel" class="form-check-input" type="radio">
+										No
+									</label>
 								</div>
-
 							</div>
 
-						</fieldset>
+						</fieldset><!--/Transportation-->
 
-						<div class="form-group">
-							<label for="txtThoughts">Your Thoughts What do you feel is wrong with the country?</label> <textarea id="txtThoughts" class="form-control">bla bla</textarea>
-						</div>
-
+						<!--###########################-->
+						<!--# Your Thoughts           #-->
+						<!--###########################-->
+						<fieldset class="mt-lg-5 mt-md-3 mt-sm-5">
+							<legend>Your Thoughts</legend>
+							<div class="form-group">
+								<label for="txtThoughts">What do you feel is wrong with the country?</label>
+								<textarea id="txtThoughts" class="form-control"></textarea>
+							</div>
+						</fieldset><!--/Your Thoughts-->
 
 						<div class="form-buttons mt-lg-3">
-
 							<button type="reset" class="btn btn-secondary">Cancel</button>
 							<button type="submit" class="btn btn-primary">Submit</button>
 						</div>
-
-
-
-
-
 					</form>
 
 				</div>
